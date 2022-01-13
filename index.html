@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pokémon Search UI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Search UI For Pokémon TCG</h1>
+      <section>
+        <h2>Introduction</h2>
+        <p id="para1">
+          This Search UI will let you search for a pokémon in the free pokémon
+          trading card game (TCG) database.
+        </p>
+      </section>
+      <section>
+        <h2 class="letter-spacing form-title">Search form</h2>
+        <form>
+          <label for="search">Pokémon name:</label>
+          <input
+            type="text"
+            name="search"
+            id="search"
+            aria-describedby="search-help"
+          />
+          <span id="search-help">
+            e.g. <em>Bulbasaur</em> (Enter at least three letters)
+          </span>
+          <span id="search-error"></span>
+          <button type="submit" id="submit-search">Search</button>
+        </form>
+      </section>
+
+      <section id="static-results">
+        <h2>Static Results</h2>
+        <ul id="static-card-list" class="pokemon-cards">
+          <li>
+            <img
+              src="https://images.pokemontcg.io/ex6/55.png"
+              alt="Bulbasaur from FireRed &amp; LeafGreen"
+            />
+          </li>
+          <li>
+            <img
+              src="https://images.pokemontcg.io/ex6/55.png"
+              alt="Bulbasaur from FireRed &amp; LeafGreen"
+            />
+          </li>
+          <li>
+            <img
+              src="https://images.pokemontcg.io/ex6/55.png"
+              alt="Bulbasaur from FireRed &amp; LeafGreen"
+            />
+          </li>
+          <li>
+            <img
+              src="https://images.pokemontcg.io/ex6/55.png"
+              alt="Bulbasaur from FireRed &amp; LeafGreen"
+            />
+          </li>
+          <li>
+            <img
+              src="https://images.pokemontcg.io/ex6/55.png"
+              alt="Bulbasaur from FireRed &amp; LeafGreen"
+            />
+          </li>
+          <li>
+            <img
+              src="https://images.pokemontcg.io/ex6/55.png"
+              alt="Bulbasaur from FireRed &amp; LeafGreen"
+            />
+          </li>
+          <li>
+            <img
+              src="https://images.pokemontcg.io/ex6/55.png"
+              alt="Bulbasaur from FireRed &amp; LeafGreen"
+            />
+          </li>
+          <li>
+            <img
+              src="https://images.pokemontcg.io/ex6/55.png"
+              alt="Bulbasaur from FireRed &amp; LeafGreen"
+            />
+          </li>
+        </ul>
+      </section>
+
+      <section id="results">
+        <h2>Results</h2>
+        <div id="results-outcome"></div>
+        <ul id="card-list" class="pokemon-cards"></ul>
+      </section>
+
+      <section id="exercises">
+        <h2>Your exercises go here</h2>
+      </section>
+    </main>
+    <script src="src/index.js"></script>
+    <script src="src/javascript_exercises.js"></script>
+  </body>
+</html>
