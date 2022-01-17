@@ -1,8 +1,8 @@
-# Mimmit Koodaa Workshop 2020
+# Pokémon Search UI
 
 Repository for the workshop between Mimmit Koodaa and Futurice. Work inspired from Juha-Matti "Juhis" Santala (@Hamatti).
 
-Be sure to check the [Search UI for Pokémon TCG Google Slides](https://bit.ly/mimmit-koodaa-2020) that go along with this repository.
+Be sure to check the [Search UI for Pokémon TCG Google Slides](https://bit.ly/psu-2022) that go along with this repository.
 
 ## HTML Exercises
 
@@ -14,7 +14,7 @@ Assignment #0:
 Create a comment somewhere inside the `<section id="exercises">` tag using HTML comments, e.g. `<!-- your comment -->`.
 
 Assignment #1:
-Add this image `https://bit.ly/futupink-yes` somewhere inside the `<section id="exercises">` tag.
+Add this image `https://bit.ly/cert-picture` somewhere inside the `<section id="exercises">` tag.
 
 Assignment #2:
 Create a link `<a>` to your favorite website.
@@ -71,7 +71,7 @@ Create a selector for the form `<input>` element and assign the following proper
 min-width: 70%;
 padding: 1rem;
 font-size: 2rem;
-border: 1px solid palevioletred;
+border: 1px solid seagreen;
 ```
 
 Assignment #3:

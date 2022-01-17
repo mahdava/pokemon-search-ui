@@ -25,7 +25,7 @@ p strong {
 
 h1,
 h2 {
-  color: palevioletred;
+  color: seagreen;
   font-family: arial;
 }
 
@@ -54,7 +54,7 @@ form input[type="text"] {
   min-width: 70%;
   padding: 1rem;
   font-size: 2rem;
-  border: 1px solid palevioletred;
+  border: 1px solid seagreen;
 }
 
 #submit-search {
@@ -62,8 +62,8 @@ form input[type="text"] {
   font-size: 1rem;
   min-width: 200px;
   min-height: 30px;
-  border: 1px solid palevioletred;
-  color: palevioletred;
+  border: 1px solid seagreen;
+  color: seagreen;
   background-color: white;
   cursor: pointer;
   text-transform: uppercase;
@@ -72,7 +72,7 @@ form input[type="text"] {
 }
 
 #submit-search:hover {
-  background-color: palevioletred;
+  background-color: seagreen;
   color: white;
 }
 

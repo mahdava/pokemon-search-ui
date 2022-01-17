@@ -39,15 +39,27 @@
             >e.g. <em>Bulbasaur</em> (Enter at least three letters)
           </span>
           <span id="search-error"></span>
-          <button type="submit" id="submit-search">Search</button>
+          <button type="submit" class="interactive-btn" id="submit-search">
+            Search
+          </button>
         </form>
       </section>
-      <section id="results">
+      <section id="results" class="hidden">
         <h2>Results</h2>
         <div id="results-outcome"></div>
         <ul id="card-list"></ul>
+        <div class="center">
+          <button
+            disabled="true"
+            class="hidden interactive-btn"
+            id="load-more-results"
+            meta-page="2"
+          >
+            Load more
+          </button>
+        </div>
       </section>
     </main>
-    <script src="src/index.js"></script>
+    <script src="src/index_incomplete.js"></script>
   </body>
 </html>

@@ -30,7 +30,7 @@ Assignment #2: Create a selector for the form `<input>` element and assign the f
 min-width: 70%;
 padding: 1rem;
 font-size: 2rem;
-border: 1px solid palevioletred;
+border: 1px solid seagreen;
 ```
 
 Assignment #3: Make the submit `<button>` bigger and make the cursor look like a hand pointer when you hover on it; select the button in a way that if the form had more than one button, only the submit button would be affected.

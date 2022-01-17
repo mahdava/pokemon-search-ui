@@ -132,52 +132,7 @@ const searchCards = (event) => {
 };
 
 const loadMoreCards = () => {
-  // We read the number of the page we want to load from the meta attribute of the Load More button
-  // which we have set to initially start with 2
-  let pageToSearch = Number(loadMoreButton.getAttribute("meta-page"));
-  fetch(
-    `${API_URL}?page=${pageToSearch}&pageSize=${pageSize}&q=name:${pokemonName}*`,
-  )
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (json) {
-      // let's read from our response the array of cards
-      let cards = json.data;
-
-      // We do something if we have at least one card
-      if (cards.length > 0) {
-        // we create the HTML format of all the cards of the next page
-        const listItems = createListOfCards(cards);
-
-        // We add them one by one in the place in the HTML page meant to display the cards
-        // If our cards per page are 8, and in total we have 10
-        // this would show only the remaining two
-        listItems.forEach((item) => cardList.append(item));
-
-        // If we have still have more cards in total
-        // e.g. page one had 8 cards + page two had still 8 cards = 16 cards shown, but the total cards are 20
-
-        // Note: this works also if page one had 8 cards and page two had 4 cards for a total of 12 cards
-        // 12 total cards - (8 cards of the first page + 4 cards of the second page) is equal to 0 so it's not "bigger than 0"
-        // even if the way we are calculating this is
-        // 12 cards total - (8 cards * the current page number 2 ) = 12 - 16 = -4 which is still not bigger than 0
-        // This condition explicity requires for us to have more than 0 cards still left to show, so if we have exactly 0 or less
-        // it will move to execute the else case
-
-        if (json.totalCount - pageSize * pageToSearch > 0) {
-          // we increment the number of the page for the Load More button and save it in the button information itself
-          pageToSearch++;
-          loadMoreButton.setAttribute("meta-page", pageToSearch);
-        } else {
-          // If we have already dispayed all the available cards
-
-          // Let's hide and disable again the Load More button
-          loadMoreButton.disabled = true;
-          loadMoreButton.classList.add("hidden");
-        }
-      }
-    });
+  alert("Implement me!");
 };
 
 if (searchButton) {

@@ -6,6 +6,10 @@ p {
   color: #180044;
 }
 
+.hidden {
+  display: none;
+}
+
 #para1 {
   text-align: center;
   color: #310655;
@@ -25,7 +29,7 @@ p strong {
 
 h1,
 h2 {
-  color: palevioletred;
+  color: seagreen;
   font-family: arial;
 }
 
@@ -54,7 +58,7 @@ form input[type="text"] {
   min-width: 70%;
   padding: 1rem;
   font-size: 2rem;
-  border: 1px solid palevioletred;
+  border: 1px solid seagreen;
 }
 
 #search-error p {
@@ -62,13 +66,13 @@ form input[type="text"] {
   color: red;
 }
 
-#submit-search {
+.interactive-btn {
   padding: 1rem;
   font-size: 1rem;
   min-width: 200px;
   min-height: 30px;
-  border: 1px solid palevioletred;
-  color: palevioletred;
+  border: 1px solid seagreen;
+  color: seagreen;
   background-color: white;
   cursor: pointer;
   text-transform: uppercase;
@@ -76,9 +80,16 @@ form input[type="text"] {
   transition: 0.1s all ease-in;
 }
 
-#submit-search:hover {
-  background-color: palevioletred;
+.interactive-btn:hover {
+  background-color: seagreen;
   color: white;
+}
+
+.interactive-btn:disabled {
+  cursor: not-allowed;
+  border: 1px solid gray;
+  color: gray;
+  background-color: white;
 }
 
 #card-list {
@@ -98,6 +109,10 @@ form input[type="text"] {
 
 #card-list li img {
   max-width: 240px;
+}
+
+.center {
+  text-align: center;
 }
 
 /* https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp */
