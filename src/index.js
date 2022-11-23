@@ -1,6 +1,6 @@
 // Briefly what is this file doing
 
-const API_URL = "https://api.pokemontcg.io/v1/cards?name=";
+const API_URL = "https://api.pokemontcg.io/v2/cards?q=name:";
 
 const resultsSection = document.getElementById("results");
 const resultsOutcome = document.getElementById("results-outcome");
@@ -36,7 +36,7 @@ const searchCards = (event) => {
         resultsOutcome.innerHTML = "";
 
         // let's read from our response the array of cards
-        let cards = json.cards;
+        let cards = json.data;
 
         // If we have more than 0 cards, meaning that if we have found any card
         if (cards.length > 0) {
@@ -50,11 +50,11 @@ const searchCards = (event) => {
             const cardTitle = document.createElement("h3");
 
             // add to the image element the url of the card
-            cardImage.src = card.imageUrl;
+            cardImage.src = card.images.large;
             // add an alt text to the image element with the name of the card
-            cardImage.alt = `${card.name} from ${card.set}`;
+            cardImage.alt = `${card.name} from ${card.set.name}`;
             // add the name of the card to the heading
-            cardTitle.innerText = `${card.name} from ${card.set}`;
+            cardTitle.innerText = `${card.name} from ${card.set.name}`;
 
             // add the image to the list item
             listItem.append(cardImage);
